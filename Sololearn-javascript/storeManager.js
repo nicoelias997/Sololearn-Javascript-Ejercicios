@@ -5,12 +5,16 @@
 
 function main(increase) {
     var prices = [98.99, 15.2, 20, 1026];
-        prices[i] += increase;
        
+for(let i = 0; i < prices.length; i++){
+    prices[i] = prices[i] + increase;
+}
         return prices;
 }
 
 console.log(main(9));
-// for(let i = 0; i < prices.length; i++){
-//     prices[i] += increase; //// solo se me modificaba el primer elemento, por que?
-// }
+
+ // prices[0] += increase;
+        // prices[1] += increase;
+        // prices[2] += increase;
+        // prices[3] += increase;
